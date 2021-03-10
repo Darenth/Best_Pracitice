@@ -2,6 +2,8 @@ package utility;
 
 import com.github.javafaker.Faker;
 
+import java.util.Date;
+
 public class DataFaker {
 
     private Faker faker;
@@ -41,4 +43,6 @@ public class DataFaker {
     }
 
     public String getFakeMobilePhone() { return faker.phoneNumber().cellPhone(); }
+
+
 }

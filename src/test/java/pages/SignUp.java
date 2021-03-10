@@ -3,6 +3,8 @@ package pages;
 
 import org.hamcrest.core.IsCollectionContaining;
 import static org.junit.Assert.assertEquals;
+
+import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -102,7 +104,8 @@ public class SignUp extends BasePage {
     @Step
     public void userShouldSeeRegistrationFormAlert() {
         String EXPECTED_MESSAGE = "firstname is required.";
-        assertEquals(getAlertMessageContent(), IsCollectionContaining.hasItem(EXPECTED_MESSAGE));
+        //assertEquals(IsCollectionContaining.hasItem(EXPECTED_MESSAGE),getAlertMessageContent());
+        assertEquals(EXPECTED_MESSAGE,getAlertMessageContent().get(0));
     }
 
     private List<String> getAlertMessageContent() {

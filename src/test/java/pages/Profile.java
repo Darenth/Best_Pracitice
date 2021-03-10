@@ -26,6 +26,6 @@ public class Profile extends BasePage {
         String profilePageHeaderText = profilePageHeader.getText();
         String expectedHeaderText = "MY ACCOUNT";
 
-        assertEquals(profilePageHeaderText, IsEqual.equalTo(expectedHeaderText));
+        assertEquals(expectedHeaderText,profilePageHeaderText);
     }
 }
