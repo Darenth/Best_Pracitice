@@ -14,7 +14,7 @@ public class SignIn extends BasePage {
         super();
     }
 
-    private DataFaker faker = new DataFaker();
+    private final DataFaker faker = new DataFaker();
 
     @FindBy(id = "email_create")
     private WebElement emailInput;

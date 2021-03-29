@@ -8,7 +8,7 @@ import static config.WebDriverSingleton.getInstance;
 
 public class Actions {
     static final int WAIT_TIMEOUT = 10;
-    private static WebDriverWait wait = new WebDriverWait(getInstance(), WAIT_TIMEOUT);
+    private static final WebDriverWait wait = new WebDriverWait(getInstance(), WAIT_TIMEOUT);
 
     public static void waitForVisibilityOfElement(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));

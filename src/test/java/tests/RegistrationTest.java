@@ -3,6 +3,7 @@ package tests;
 import config.TestConfig;
 
 
+import org.junit.Ignore;
 import org.junit.Test;
 import pages.Home;
 
@@ -10,6 +11,7 @@ public class RegistrationTest extends TestConfig {
 
     @Test
     public void userShouldSuccessfullyRegister() {
+
         new Home()
                 .openSignInPage()
                 .submitCreateAccountFormWithValidEmail()
@@ -18,6 +20,7 @@ public class RegistrationTest extends TestConfig {
     }
 
     @Test
+    @Ignore
     public void registrationWithInvalidDataShouldFail() {
         new Home()
                 .openSignInPage()

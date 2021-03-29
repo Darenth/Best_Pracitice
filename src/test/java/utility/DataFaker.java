@@ -2,11 +2,9 @@ package utility;
 
 import com.github.javafaker.Faker;
 
-import java.util.Date;
-
 public class DataFaker {
 
-    private Faker faker;
+    private final Faker faker;
 
     public DataFaker() {
         faker = new Faker();

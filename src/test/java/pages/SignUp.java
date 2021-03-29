@@ -1,10 +1,8 @@
 package pages;
 
 
-import org.hamcrest.core.IsCollectionContaining;
 import static org.junit.Assert.assertEquals;
 
-import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -24,7 +22,7 @@ public class SignUp extends BasePage {
         super();
     }
 
-    private DataFaker faker = new DataFaker();
+    private final DataFaker faker = new DataFaker();
 
     @FindBy(id = "id_gender1")
     private WebElement maleTitleRadioBtn;
