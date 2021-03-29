@@ -26,6 +26,6 @@ public class RegistrationTest extends TestConfig {
                 .openSignInPage()
                 .submitCreateAccountFormWithValidEmail()
                 .submitFormWithInvalidData()
-                .userShouldSeeRegistrationFormAlert();
+                .userShouldSeeRegistrationFormAlert();//
     }
 }
