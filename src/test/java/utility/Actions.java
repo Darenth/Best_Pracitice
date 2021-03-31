@@ -11,6 +11,7 @@ public class Actions {
     private static final WebDriverWait wait = new WebDriverWait(getInstance(), WAIT_TIMEOUT);
 
     public static void waitForVisibilityOfElement(WebElement element) {
+        System.out.println("from master");
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 }
