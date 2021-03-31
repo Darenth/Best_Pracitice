@@ -13,6 +13,7 @@ public class Screenshot {
     @Attachment(value="Screenshot", type="image/png")
     public static byte[] captureScreenshot() {
         System.out.println("Screenshot is created");
+        System.out.println("Screenshot is created2");
         return ((TakesScreenshot) getInstance()).getScreenshotAs(OutputType.BYTES);
     }
 }
